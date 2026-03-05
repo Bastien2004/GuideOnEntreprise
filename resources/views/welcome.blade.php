@@ -176,22 +176,33 @@
             </div>
 
             <div class="lg:w-3/5 p-12 lg:p-20 bg-slate-50/50">
-                <form action="#" class="space-y-8 not-italic">
+                <form action="{{ route('contact.send') }}" method="POST" class="space-y-8 not-italic">
+                    @csrf
+
+                    @if(session('success'))
+                        <div style="background:#dcfce7; color:#166534; padding:16px; border-radius:12px; font-weight:bold;">
+                            ✅ {{ session('success') }}
+                        </div>
+                    @endif
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="space-y-3">
                             <label class="text-[11px] font-black uppercase tracking-widest text-slate-400 ml-1">Votre Nom</label>
-                            <input type="text" placeholder="Jean Dupont" class="w-full bg-white border-none rounded-2xl px-6 py-4 shadow-sm focus:ring-2 focus:ring-blue-500 transition-all outline-none">
+                            <input type="text" name="nom" placeholder="Jean Dupont"
+                                   class="w-full bg-white border-none rounded-2xl px-6 py-4 shadow-sm focus:ring-2 focus:ring-blue-500 transition-all outline-none">
                         </div>
                         <div class="space-y-3">
                             <label class="text-[11px] font-black uppercase tracking-widest text-slate-400 ml-1">Email professionnel</label>
-                            <input type="email" placeholder="jean@exemple.fr" class="w-full bg-white border-none rounded-2xl px-6 py-4 shadow-sm focus:ring-2 focus:ring-blue-500 transition-all outline-none">
+                            <input type="email" name="email" placeholder="jean@exemple.fr"
+                                   class="w-full bg-white border-none rounded-2xl px-6 py-4 shadow-sm focus:ring-2 focus:ring-blue-500 transition-all outline-none">
                         </div>
                     </div>
                     <div class="space-y-3">
                         <label class="text-[11px] font-black uppercase tracking-widest text-slate-400 ml-1">Votre projet en quelques mots</label>
-                        <textarea rows="4" placeholder="Objectifs, fonctionnalités, délais..." class="w-full bg-white border-none rounded-2xl px-6 py-4 shadow-sm focus:ring-2 focus:ring-blue-500 transition-all outline-none"></textarea>
+                        <textarea name="projet" rows="4" placeholder="Objectifs, fonctionnalités, délais..."
+                                  class="w-full bg-white border-none rounded-2xl px-6 py-4 shadow-sm focus:ring-2 focus:ring-blue-500 transition-all outline-none"></textarea>
                     </div>
-                    <button class="w-full bg-slate-900 text-white font-black py-5 rounded-2xl hover:bg-blue-600 hover:shadow-2xl hover:shadow-blue-500/40 transition-all transform active:scale-95 flex items-center justify-center gap-3 tracking-widest uppercase text-sm">
+                    <button type="submit" class="w-full bg-slate-900 text-white font-black py-5 rounded-2xl hover:bg-blue-600 hover:shadow-2xl hover:shadow-blue-500/40 transition-all transform active:scale-95 flex items-center justify-center gap-3 tracking-widest uppercase text-sm">
                         Envoyer ma demande <i class="fas fa-arrow-right"></i>
                     </button>
                 </form>
