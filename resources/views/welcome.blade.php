@@ -159,22 +159,17 @@
                 <div class="space-y-8">
                     <h2 class="text-5xl font-black leading-tight italic">On discute de votre futur site ?</h2>
                     <div class="space-y-6 pt-10">
-                        <a href="tel:0616443473" class="flex items-center gap-4 group max-w-full">
-                            <div class="contact-icon-box shrink-0">
+                        <a href="tel:0616443473" class="flex items-center gap-5 group">
+                            <div class="contact-icon-box">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
-                            <span class="text-lg font-bold uppercase tracking-tight contact-link-text">
-            06 16 44 34 73
-        </span>
+                            <span class="text-lg font-bold uppercase">06 16 44 34 73</span>
                         </a>
-
-                        <a href="mailto:guideon.contact@gmail.com" class="flex items-center gap-4 group max-w-full">
-                            <div class="contact-icon-box shrink-0">
+                        <a href="mailto:guideon.contact@gmail.com" class="flex items-center gap-5 group">
+                            <div class="contact-icon-box">
                                 <i class="fas fa-envelope"></i>
                             </div>
-                            <span class="text-lg font-bold uppercase tracking-tighter contact-link-text">
-            guideon.contact@gmail.com
-        </span>
+                            <span class="text-lg font-bold uppercase tracking-tighter">guideon.contact@gmail.com</span>
                         </a>
                     </div>
                 </div>

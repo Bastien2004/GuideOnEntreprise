@@ -163,16 +163,3 @@ section[id] {
     flex-shrink: 0; /* Empêche l'icône de s'écraser si le texte est long */
 }
 
-/* Empêche le texte long de casser le layout */
-.contact-link-text {
-    word-break: break-all; /* Coupe les mots si nécessaire (e-mail) */
-    overflow-wrap: break-word;
-    white-space: normal;   /* Permet le retour à la ligne */
-    line-height: 1.2;
-}
-
-@media (max-width: 640px) {
-    .contact-link-text {
-        font-size: 0.9rem; /* Réduit légèrement la taille sur mobile */
-    }
-}
