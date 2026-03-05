@@ -168,6 +168,31 @@ section[id] {
     text-align: center;    /* Centre le texte sous le logo sur mobile */
 }
 
+/* --- AJUSTEMENTS MOBILE --- */
+@media (max-width: 768px) {
+    /* Réduire le titre "On discute de votre futur site ?" */
+    #contact h2.text-5xl {
+        font-size: 2.5rem !important;
+        line-height: 1.1;
+    }
+
+    /* Ajuster l'espacement du texte sous le logo */
+    .contact-link-text {
+        margin-top: 4px;
+        opacity: 0.9;
+        letter-spacing: 0.05em;
+        text-align: center;
+        word-break: break-all;
+    }
+}
+
+/* Pour garder le texte à gauche sur ordinateur */
+@media (min-width: 1024px) {
+    .contact-link-text {
+        text-align: left;
+    }
+}
+
 @media (min-width: 1024px) {
     .contact-link-text {
         text-align: left;  /* Aligne à gauche quand le logo repasse à côté */
