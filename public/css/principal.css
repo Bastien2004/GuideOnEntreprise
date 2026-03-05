@@ -199,3 +199,31 @@ section[id] {
         word-break: normal;
     }
 }
+
+
+/* Gestion du texte de contact pour le mobile */
+.contact-link-text {
+    text-align: center;
+    word-break: break-all; /* Sécurité anti-débordement */
+    max-width: 100%;
+}
+
+/* On remet l'alignement à gauche uniquement sur grand écran */
+@media (min-width: 1024px) {
+    .contact-link-text {
+        text-align: left;
+        word-break: normal;
+    }
+}
+
+/* Ajustement de la section bleue sur mobile pour éviter l'étouffement */
+@media (max-width: 1024px) {
+    #contact .bg-blue-600 {
+        padding: 3rem 1.5rem !important;
+    }
+
+    #contact h2.text-5xl {
+        font-size: 2rem !important; /* Réduit la taille du titre qui prend trop de place */
+        text-align: center;
+    }
+}
