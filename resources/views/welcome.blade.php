@@ -37,7 +37,7 @@
         <div class="lg:w-3/5 text-center lg:text-left space-y-10">
             <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase">
                 <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Disponible pour nouveaux projets
+                Disponible pour nouveaux projets testtttttt
             </div>
             <h1 class="text-6xl lg:text-8xl font-black leading-[0.9] tracking-tight">
                 On guide votre site vers le <span class="text-blue-200 italic">succès.</span>
