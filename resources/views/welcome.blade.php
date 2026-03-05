@@ -121,7 +121,7 @@
             </div>
             <div class="service-card group p-10 rounded-[2rem] border-slate-100 border-2">
                 <div class="w-14 h-14 bg-amber-600 text-white rounded-2xl flex items-center justify-center text-xl mb-8 group-hover:rotate-6 transition-transform shadow-lg shadow-amber-500/20">
-                    <i class="fas fa-shield-halved"></i>
+                    <i class="fas fa-wrench"></i>
                 </div>
                 <h3 class="text-2xl font-black mb-4">Maintenance</h3>
                 <p class="text-slate-500 leading-relaxed text-[15px] font-medium">Mises à jour et support technique 7j/7 pour votre sérénité totale.</p>
