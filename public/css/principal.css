@@ -163,3 +163,14 @@ section[id] {
     flex-shrink: 0; /* Empêche l'icône de s'écraser si le texte est long */
 }
 
+.contact-link-text {
+    word-break: break-all; /* Coupe l'email proprement si l'écran est minuscule */
+    text-align: center;    /* Centre le texte sous le logo sur mobile */
+}
+
+@media (min-width: 1024px) {
+    .contact-link-text {
+        text-align: left;  /* Aligne à gauche quand le logo repasse à côté */
+        word-break: normal;
+    }
+}
