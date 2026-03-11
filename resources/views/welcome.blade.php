@@ -226,6 +226,9 @@
             <a href="https://www.linkedin.com/in/bastien-hecquet-08b618256/" target="_blank" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
                 <i class="fab fa-linkedin-in"></i>
             </a>
+            <a href="https://portfolio.guideon.dev" target="_blank" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
+                <i class="fas fa-briefcase"></i>
+            </a>
         </div>
         <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">© {{ date('Y') }} — Bastien Hecquet</p>
     </div>
