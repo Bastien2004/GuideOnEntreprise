@@ -25,6 +25,7 @@
             GUIDEON
         </div>
         <div class="hidden md:flex items-center space-x-8 font-bold text-[13px] uppercase tracking-widest text-slate-500">
+            <a href="https://portfolio.guideon.dev" target="_blank" class="hover:text-blue-600 transition-colors">Portfolio</a>
             <a href="#services" class="hover:text-blue-600 transition-colors">Services</a>
             <a href="#propos" class="hover:text-blue-600 transition-colors">À propos</a>
             <a href="#contact" class="bg-slate-900 text-white px-5 py-2.5 rounded-xl hover:bg-blue-600 hover:shadow-xl hover:shadow-blue-500/20 transition-all active:scale-95">
@@ -225,9 +226,6 @@
         <div class="flex gap-6">
             <a href="https://www.linkedin.com/in/bastien-hecquet-08b618256/" target="_blank" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
                 <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://portfolio.guideon.dev" target="_blank" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
-                <i class="fas fa-briefcase"></i>
             </a>
         </div>
         <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">© {{ date('Y') }} — Bastien Hecquet</p>
