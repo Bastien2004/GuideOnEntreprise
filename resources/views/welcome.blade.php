@@ -3,215 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bastien Hecquet, développeur spécialisé Laravel. Je crée des outils digitaux performants et optimisés SEO pour propulser votre activité.">
-    <title>Guideon | Expert Laravel & Création de Sites Web Performance</title>
-
+    <meta name="description" content="Bastien Hecquet, développeur Laravel. Sites web performants, optimisés SEO, livrés dans les délais.">
+    <title>Guideon — Développeur Laravel & Sites Web sur mesure</title>
     <link rel="stylesheet" href="{{ asset('css/principal.css') }}">
-
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <link rel="icon" href="{{ asset('images/logo.png') }}" type="logdocker exec guideon-app ls /var/www/public/css/o/png">
-
+    <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/png">
 </head>
-<body class="bg-[#fcfdfe] text-slate-900 selection:bg-blue-600 selection:text-white">
+<body>
 
-<nav class="fixed w-full z-50 transition-all duration-300 py-4 px-6">
-    <div class="max-w-6xl mx-auto bg-white/80 backdrop-blur-xl border border-white/20 px-6 py-3 rounded-2xl shadow-sm flex justify-between items-center">
-        <div class="text-xl font-black text-blue-600 tracking-tighter flex items-center gap-2">
-            <div class="w-9 h-9 bg-gradient-to-br from-blue-400 to-blue-600 rounded-[10px] flex items-center justify-center text-white text-lg shadow-md border-b-4 border-blue-800/30">
-                G
-            </div>
-            GUIDEON
-        </div>
-        <div class="hidden md:flex items-center space-x-8 font-bold text-[13px] uppercase tracking-widest text-slate-500">
-            <a href="https://portfolio.guideon.dev" target="_blank" class="hover:text-blue-600 transition-colors">Portfolio</a>
-            <a href="#services" class="hover:text-blue-600 transition-colors">Services</a>
-            <a href="#propos" class="hover:text-blue-600 transition-colors">À propos</a>
-            <a href="#contact" class="bg-slate-900 text-white px-5 py-2.5 rounded-xl hover:bg-blue-600 hover:shadow-xl hover:shadow-blue-500/20 transition-all active:scale-95">
-                Projet en vue ?
-            </a>
-        </div>
+{{-- NAV --}}
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo">
+            <span class="logo-mark">G</span>
+            <span class="logo-text">Guideon</span>
+        </a>
+        <nav class="main-nav">
+            <a href="#realisations">Réalisations</a>
+            <a href="#services">Services</a>
+            <a href="#propos">À propos</a>
+            <a href="#contact" class="nav-cta">Démarrer un projet</a>
+        </nav>
+        <button class="burger" onclick="this.classList.toggle('open'); document.querySelector('.mobile-nav').classList.toggle('open')" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-</nav>
-
-<section class="relative pt-48 pb-32 bg-guideon text-white rounded-b-[4rem] shadow-2xl overflow-hidden">
-    <div class="circuit-overlay"></div>
-    <div class="max-w-6xl mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center gap-16">
-        <div class="lg:w-3/5 text-center lg:text-left space-y-10">
-            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase">
-                <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Disponible pour nouveaux projets
-            </div>
-            <h1 class="text-6xl lg:text-8xl font-black leading-[0.9] tracking-tight">
-                On guide votre site vers le <span class="text-blue-200 italic">succès.</span>
-            </h1>
-            <p class="text-xl text-blue-50 max-w-xl leading-relaxed font-medium opacity-80">
-                Bastien Hecquet — Développeur Laravel spécialisé dans la création d'outils digitaux qui propulsent votre activité.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
-                <a href="#contact" class="bg-white text-blue-700 px-10 py-5 rounded-2xl font-black text-lg shadow-xl hover:shadow-white/10 hover:-translate-y-1 transition-all active:scale-95">
-                    Lancer mon projet
-                </a>
-                <a href="#services" class="bg-blue-500/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all">
-                    Expertise
-                </a>
-            </div>
-        </div>
-
-        <div class="lg:w-2/5 flex justify-center relative">
-            <div class="floating relative w-72 h-60 bg-[#3b66f5] rounded-[3rem] border-b-[12px] border-black/20 shadow-[0_25px_50px_-12px_rgba(59,102,245,0.5)] flex flex-col items-center justify-center overflow-hidden">
-
-                <div class="absolute top-10 flex justify-between w-44">
-                    <div class="w-12 h-4 border-t-4 border-[#0a1a4a] rounded-[100%] -rotate-12"></div>
-                    <div class="w-12 h-4 border-t-4 border-[#0a1a4a] rounded-[100%] rotate-12"></div>
-                </div>
-
-                <div class="flex space-x-4 mt-6">
-                    <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center relative shadow-inner overflow-hidden">
-                        <div class="w-14 h-14 bg-[#0a1a4a] rounded-full relative translate-x-2 translate-y-1">
-                            <div class="absolute top-2 right-2 w-4 h-4 bg-white rounded-full"></div>
-                        </div>
-                    </div>
-                    <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center relative shadow-inner overflow-hidden">
-                        <div class="w-14 h-14 bg-[#0a1a4a] rounded-full relative translate-x-2 translate-y-1">
-                            <div class="absolute top-2 right-2 w-4 h-4 bg-white rounded-full"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-4 w-16 h-6 border-b-4 border-[#0a1a4a] rounded-[100%]"></div>
-
-                <div class="absolute top-4 left-6 w-16 h-8 bg-white/20 rounded-full blur-md -rotate-12"></div>
-            </div>
-
-            <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-300/20 blur-3xl rounded-full"></div>
-            <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-indigo-500/20 blur-3xl rounded-full"></div>
-        </div>
+    <div class="mobile-nav">
+        <a href="#realisations" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Réalisations</a>
+        <a href="#services" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Services</a>
+        <a href="#propos" onclick="document.querySelector('.mobile-nav').classList.remove('open')">À propos</a>
+        <a href="#contact" class="nav-cta" onclick="document.querySelector('.mobile-nav').classList.remove('open')">Démarrer un projet</a>
     </div>
-</section>
+</header>
 
-<section id="services" class="py-32 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-        <div class="flex flex-col lg:flex-row justify-between items-end mb-20 gap-8">
-            <div class="space-y-4">
-                <h2 class="text-blue-600 font-black tracking-widest uppercase text-xs">Pourquoi choisir Guideon ?</h2>
-                <p class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">Une solution complète<br>pour votre présence web.</p>
-            </div>
-            <p class="text-slate-500 max-w-sm font-medium">De la première ligne de code au déploiement final, je m'occupe de tout.</p>
+{{-- HERO --}}
+<section class="hero">
+    <div class="container">
+        <div class="hero-available">
+            <span class="pulse"></span>
+            Disponible pour nouveaux projets
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="service-card group p-10 rounded-[2rem] border-slate-100 border-2">
-                <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-xl mb-8 group-hover:rotate-6 transition-transform shadow-lg shadow-blue-500/20">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
-                <h3 class="text-2xl font-black mb-4">Création</h3>
-                <p class="text-slate-500 leading-relaxed text-[15px] font-medium">Design sur-mesure captivant, pensé pour convertir vos visiteurs en clients.</p>
+        <h1 class="hero-title">
+            Sites web Laravel<br>
+            <em>conçus pour performer.</em>
+        </h1>
+        <p class="hero-desc">
+            Bastien Hecquet — Je conçois et développe des sites et applications web sur mesure,<br class="br-desk"> rapides, bien référencés et faciles à faire évoluer.
+        </p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn btn-dark">Parler de mon projet</a>
+            <a href="#realisations" class="btn btn-ghost">Voir les réalisations</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <span class="stat-n">3+</span>
+                <span class="stat-l">Sites livrés</span>
             </div>
-            <div class="service-card group p-10 rounded-[2rem] border-slate-100 border-2">
-                <div class="w-14 h-14 bg-indigo-600 text-white rounded-2xl flex items-center justify-center text-xl mb-8 group-hover:rotate-6 transition-transform shadow-lg shadow-indigo-500/20">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3 class="text-2xl font-black mb-4">Dév. Laravel</h3>
-                <p class="text-slate-500 leading-relaxed text-[15px] font-medium">Des applications web robustes, rapides et sécurisées avec le meilleur framework PHP.</p>
+            <div class="stat-divider"></div>
+            <div class="hero-stat">
+                <span class="stat-n">Laravel</span>
+                <span class="stat-l">PHP 8+</span>
             </div>
-            <div class="service-card group p-10 rounded-[2rem] border-slate-100 border-2">
-                <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-xl mb-8 group-hover:rotate-6 transition-transform shadow-lg shadow-emerald-500/20">
-                    <i class="fas fa-rocket"></i>
-                </div>
-                <h3 class="text-2xl font-black mb-4">Mise en ligne</h3>
-                <p class="text-slate-500 leading-relaxed text-[15px] font-medium">Hébergement haute performance et optimisation SEO pour être vu partout.</p>
-            </div>
-            <div class="service-card group p-10 rounded-[2rem] border-slate-100 border-2">
-                <div class="w-14 h-14 bg-amber-600 text-white rounded-2xl flex items-center justify-center text-xl mb-8 group-hover:rotate-6 transition-transform shadow-lg shadow-amber-500/20">
-                    <i class="fas fa-wrench"></i>
-                </div>
-                <h3 class="text-2xl font-black mb-4">Maintenance</h3>
-                <p class="text-slate-500 leading-relaxed text-[15px] font-medium">Mises à jour et support technique 7j/7 pour votre sérénité totale.</p>
+            <div class="stat-divider"></div>
+            <div class="hero-stat">
+                <span class="stat-n">7j/7</span>
+                <span class="stat-l">Support</span>
             </div>
         </div>
     </div>
 </section>
 
-<section id="propos" class="py-20 px-6">
-    <div class="max-w-6xl mx-auto bg-slate-900 rounded-[3rem] p-12 lg:p-20 flex flex-col lg:flex-row items-center gap-16 relative overflow-hidden">
-        <div class="lg:w-1/2 relative z-10">
-            <h2 class="text-blue-400 font-bold uppercase tracking-widest text-xs mb-6">L'humain derrière le code</h2>
-            <h3 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8 italic">"Votre projet mérite un guide, pas seulement un exécutant."</h3>
-            <p class="text-slate-400 text-lg leading-relaxed mb-10">
-                Passionné par l'écosystème Laravel, j'ai fondé <span class="text-white font-bold tracking-tight">GUIDEON</span> pour offrir aux entrepreneurs un accompagnement technique haut de gamme sans le jargon complexe.
-            </p>
-            <div class="flex gap-10">
-                <div><p class="text-4xl font-black text-white">100%</p><p class="text-slate-500 text-xs font-bold uppercase mt-2">Engagement</p></div>
-                <div><p class="text-4xl font-black text-white">PHP 8+</p><p class="text-slate-500 text-xs font-bold uppercase mt-2">Expertise Laravel</p></div>
-            </div>
+{{-- SERVICES --}}
+<section id="services" class="section section-services">
+    <div class="container">
+        <div class="section-head">
+            <p class="eyebrow">Ce que je fais</p>
+            <h2>Un accompagnement complet,<br>du design au déploiement.</h2>
         </div>
-        <div class="lg:w-1/2 flex justify-center lg:justify-end">
-            <div class="w-64 h-64 lg:w-80 lg:h-80 bg-blue-600 rounded-[2rem] flex items-center justify-center text-9xl text-white shadow-3xl rotate-3">
-                <i class="fas fa-user-circle opacity-30"></i>
-                <span class="absolute font-black italic scale-150">BH.</span>
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="service-num">01</div>
+                <h3>Design & création</h3>
+                <p>Interfaces pensées pour convertir. Chaque page est conçue autour de vos objectifs, pas d'un template.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-num">02</div>
+                <h3>Développement Laravel</h3>
+                <p>Applications robustes et sécurisées. Laravel offre la solidité d'un framework éprouvé avec la flexibilité du sur-mesure.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-num">03</div>
+                <h3>SEO & performance</h3>
+                <p>Hébergement optimisé, temps de chargement maîtrisés, structure pensée pour les moteurs de recherche dès le départ.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-num">04</div>
+                <h3>Maintenance & suivi</h3>
+                <p>Votre site reste à jour, sécurisé et fonctionnel. Je reste disponible bien après la livraison.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="contact" class="py-32">
-    <div class="max-w-6xl mx-auto px-6">
-        <div class="bg-white rounded-[4rem] shadow-2xl shadow-slate-200/50 border border-slate-100 flex flex-col lg:flex-row overflow-hidden italic">
-            <div class="lg:w-2/5 bg-blue-600 p-12 lg:p-20 text-white flex flex-col justify-between">
-                <div class="space-y-8">
-                    <h2 class="text-5xl font-black leading-tight italic">On discute de votre futur site ?</h2>
-                    <div class="space-y-10 lg:space-y-6 pt-10">
-                        <a href="tel:0616443473" class="flex flex-col lg:flex-row items-center lg:items-center gap-3 lg:gap-5 group">
-                            <div class="contact-icon-box shrink-0">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <span class="text-[15px] lg:text-lg font-bold uppercase tracking-widest contact-link-text">
-                                06 16 44 34 73
-                            </span>
-                        </a>
+{{-- RÉALISATIONS --}}
+<section id="realisations" class="section section-realisations">
+    <div class="container">
+        <div class="section-head">
+            <p class="eyebrow">Réalisations</p>
+            <h2>Ils m'ont fait confiance.</h2>
+        </div>
+        <div class="portfolio-grid">
 
-                        <a href="mailto:guideon.contact@gmail.com" class="flex flex-col lg:flex-row items-center lg:items-center gap-3 lg:gap-5 group">
-                            <div class="contact-icon-box shrink-0">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <span class="text-[12px] lg:text-lg font-bold uppercase tracking-tight lg:tracking-tighter contact-link-text">
-                                guideon.contact@gmail.com
-                            </span>
+            <article class="portfolio-card">
+                <div class="portfolio-thumb">
+                    <img
+                        src="https://image.thum.io/get/width/700/crop/420/https://www.fredericoden.com/"
+                        alt="Site fredericoden.com"
+                        loading="lazy"
+                        onerror="this.parentElement.classList.add('thumb-error')">
+                    <div class="thumb-overlay">
+                        <a href="https://www.fredericoden.com/" target="_blank" rel="noopener" class="thumb-visit">
+                            Visiter <i class="fas fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
-            </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-tag">Site vitrine</span>
+                    <h3>Frédéric Oden</h3>
+                    <p>Site professionnel sur mesure avec design personnalisé et optimisation SEO complète.</p>
+                    <a href="https://www.fredericoden.com/" target="_blank" rel="noopener" class="portfolio-link">
+                        fredericoden.com <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
 
-            <div class="lg:w-3/5 p-12 lg:p-20 bg-slate-50/50">
-                <form action="{{ route('contact.send') }}" method="POST" class="space-y-8 not-italic">
+            <article class="portfolio-card">
+                <div class="portfolio-thumb">
+                    <img
+                        src="https://image.thum.io/get/width/700/crop/420/https://cynthiarenard.fr/"
+                        alt="Site cynthiarenard.fr"
+                        loading="lazy"
+                        onerror="this.parentElement.classList.add('thumb-error')">
+                    <div class="thumb-overlay">
+                        <a href="https://cynthiarenard.fr/" target="_blank" rel="noopener" class="thumb-visit">
+                            Visiter <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-tag">Site vitrine</span>
+                    <h3>Cynthia Renard</h3>
+                    <p>Présence web soignée avec identité visuelle forte et parcours utilisateur optimisé.</p>
+                    <a href="https://cynthiarenard.fr/" target="_blank" rel="noopener" class="portfolio-link">
+                        cynthiarenard.fr <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="portfolio-card">
+                <div class="portfolio-thumb">
+                    <img
+                        src="https://image.thum.io/get/width/700/crop/420/https://desbarresdavid.fr/"
+                        alt="Site desbarresdavid.fr"
+                        loading="lazy"
+                        onerror="this.parentElement.classList.add('thumb-error')">
+                    <div class="thumb-overlay">
+                        <a href="https://desbarresdavid.fr/" target="_blank" rel="noopener" class="thumb-visit">
+                            Visiter <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-tag">Site vitrine</span>
+                    <h3>Desbarre David</h3>
+                    <p>Site Laravel sur mesure, sécurisé et performant pour une image professionnelle durable.</p>
+                    <a href="https://desbarresdavid.fr/" target="_blank" rel="noopener" class="portfolio-link">
+                        desbarresdavid.fr <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+{{-- À PROPOS --}}
+<section id="propos" class="section section-about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-left">
+                <p class="eyebrow eyebrow-light">À propos</p>
+                <h2>"Votre projet mérite un guide, pas seulement un exécutant."</h2>
+            </div>
+            <div class="about-right">
+                <p>Passionné par l'écosystème Laravel, j'ai fondé <strong>Guideon</strong> pour offrir aux entrepreneurs un accompagnement technique sérieux — sans jargon inutile, avec un vrai suivi.</p>
+                <p>Je m'implique comme si c'était mon propre projet : je questionne, je propose, j'alerte. Vous avez un interlocuteur unique du brief à la mise en ligne.</p>
+                <div class="about-tags">
+                    <span>Laravel</span>
+                    <span>PHP 8+</span>
+                    <span>Tailwind CSS</span>
+                    <span>MySQL</span>
+                    <span>SEO technique</span>
+                    <span>Déploiement VPS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- CONTACT --}}
+<section id="contact" class="section section-contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-left">
+                <p class="eyebrow">Contact</p>
+                <h2>On discute de votre projet ?</h2>
+                <p class="contact-intro">Décrivez-moi votre idée. Je vous réponds sous 24h avec une première analyse, sans engagement.</p>
+                <div class="contact-infos">
+                    <a href="tel:0616443473" class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>06 16 44 34 73</span>
+                    </a>
+                    <a href="mailto:guideon.contact@gmail.com" class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>guideon.contact@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bastien-hecquet-08b618256/" target="_blank" class="contact-info-item">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="{{ route('contact.send') }}" method="POST">
                     @csrf
 
                     @if(session('success'))
-                        <div style="background:#dcfce7; color:#166534; padding:16px; border-radius:12px; font-weight:bold;">
-                            ✅ {{ session('success') }}
+                        <div class="form-success">
+                            ✓ {{ session('success') }}
                         </div>
                     @endif
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="space-y-3">
-                            <label class="text-[11px] font-black uppercase tracking-widest text-slate-400 ml-1">Votre Nom</label>
-                            <input type="text" name="nom" placeholder="Jean Dupont"
-                                   class="w-full bg-white border-none rounded-2xl px-6 py-4 shadow-sm focus:ring-2 focus:ring-blue-500 transition-all outline-none">
+                    @if($errors->any())
+                        <div class="form-error">
+                            Veuillez remplir tous les champs correctement.
                         </div>
-                        <div class="space-y-3">
-                            <label class="text-[11px] font-black uppercase tracking-widest text-slate-400 ml-1">Email professionnel</label>
-                            <input type="email" name="email" placeholder="jean@exemple.fr"
-                                   class="w-full bg-white border-none rounded-2xl px-6 py-4 shadow-sm focus:ring-2 focus:ring-blue-500 transition-all outline-none">
+                    @endif
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" value="{{ old('nom') }}" placeholder="Jean Dupont" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="jean@exemple.fr" required>
                         </div>
                     </div>
-                    <div class="space-y-3">
-                        <label class="text-[11px] font-black uppercase tracking-widest text-slate-400 ml-1">Votre projet en quelques mots</label>
-                        <textarea name="projet" rows="4" placeholder="Objectifs, fonctionnalités, délais..."
-                                  class="w-full bg-white border-none rounded-2xl px-6 py-4 shadow-sm focus:ring-2 focus:ring-blue-500 transition-all outline-none"></textarea>
+                    <div class="form-group">
+                        <label for="projet">Votre projet</label>
+                        <textarea id="projet" name="projet" rows="5" placeholder="Décrivez votre projet : objectifs, fonctionnalités souhaitées, délais..." required>{{ old('projet') }}</textarea>
                     </div>
-                    <button type="submit" class="w-full bg-slate-900 text-white font-black py-5 rounded-2xl hover:bg-blue-600 hover:shadow-2xl hover:shadow-blue-500/40 transition-all transform active:scale-95 flex items-center justify-center gap-3 tracking-widest uppercase text-sm">
+                    <button type="submit" class="btn btn-dark btn-full">
                         Envoyer ma demande <i class="fas fa-arrow-right"></i>
                     </button>
                 </form>
@@ -220,15 +273,14 @@
     </div>
 </section>
 
-<footer class="py-12 bg-white text-center border-t border-slate-50">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-        <div class="text-xl font-black text-slate-900 uppercase italic">GUIDEON</div>
-        <div class="flex gap-6">
-            <a href="https://www.linkedin.com/in/bastien-hecquet-08b618256/" target="_blank" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>
-        <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">© {{ date('Y') }} — Bastien Hecquet</p>
+{{-- FOOTER --}}
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span class="logo-text">Guideon</span>
+        <p>© {{ date('Y') }} Bastien Hecquet — Développeur Laravel</p>
+        <a href="https://www.linkedin.com/in/bastien-hecquet-08b618256/" target="_blank" class="footer-linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
     </div>
 </footer>
 
