@@ -458,11 +458,12 @@
             <span class="logo-text">Guideon</span>
         </div>
         <p class="footer-copy">© {{ date('Y') }} Bastien Hecquet — Développeur Laravel</p>
-        <a href="https://www.linkedin.com/in/bastien-hecquet-08b618256/" target="_blank" rel="noopener" class="footer-link">
-            LinkedIn →
-        </a>
+        <div style="display:flex; align-items:center; gap:20px;">
+            <a href="{{ route('mentions-legales') }}" class="footer-link">Mentions légales</a>
+            <a href="{{ route('confidentialite') }}" class="footer-link">Confidentialité</a>
+            <a href="https://www.linkedin.com/in/bastien-hecquet-08b618256/" target="_blank" rel="noopener" class="footer-link">LinkedIn →</a>
+        </div>
     </div>
 </footer>
-
 </body>
 </html>
